@@ -12,23 +12,23 @@ button.setAttribute('onclick', 'showMore()');
 button.addEventListener('click', showMore);
 
 function showMore() {
-    para1.textContent = paragraph;
+    para1.textContent = paragaraph;
     document.getElementById('seeMore').setAttribute('onclick', 'showLess()');
     document.getElementById('seeMore').textContent = 'See Less';
 }
 
 function showLess() {
-    para1.textContent = paragraph.slice(0, 10) + '...';
+    para1.textContent = paragaraph.slice(0, 10) + '...';
     document.getElementById('seeMore').setAttribute('onclick', 'showMore()');
     document.getElementById('seeMore').textContent = 'See More';
 }
 
-document.getElementById('seeMore').addEventListener('click', showMore);
-document.getElementById('plus').addEventListener('click', function() {
-    paragraph += ' Additional text.';
-    para1.textContent = paragraph;
-});
-document.getElementById('minus').addEventListener('click', function() {
-    paragraph = paragraph.slice(0, -17); // Remove " Additional text."
-    para1.textContent = paragraph;
-});
+// document.getElementById('seeMore').addEventListener('click', showMore);
+// document.getElementById('plus').addEventListener('click', function() {
+//     paragaraph += ' Additional text.';
+//     para1.textContent = paragaraph;
+// });
+// document.getElementById('minus').addEventListener('click', function() {
+//     paragaraph = paragaraph.slice(0, -17); 
+//     para1.textContent = paragaraph;
+// });
